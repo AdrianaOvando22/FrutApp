@@ -1,0 +1,616 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-color: red; */
+    height: auto;
+    width: 100%;
+}
+
+/* header */
+
+.icono-menu {
+    width: 60px;
+    height: 60px;
+}
+
+.container-header {
+    background-color: #A8DF8E;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+}
+
+.icono-navContainer {
+    display: none;
+    cursor: pointer;
+}
+
+.nombreEmpresa {
+    width: 25%;
+    height: 75px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav-container {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ul-container {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.opcionNav {
+    text-decoration: none;
+    font-family: 'Tilt Neon', sans-serif;
+    color: black;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .nav-container {
+        display: none;
+    }
+
+    .icono-navContainer {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .nombreEmpresa {
+        width: 50%;
+        height: 75px;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+}
+
+
+/* Main */
+.main-containerPrincipal {
+    width: 100%;
+    margin-top: 75px;
+}
+
+/* Home */
+.home-container {
+    width: 100%;
+    height: 92.2vh;
+    background-color: #A8DF8E;
+    position: relative;
+}
+
+.imgfondoplatano {
+    transform: rotate(20deg);
+    top: 18vh;
+    left: 30vw;
+    position: absolute;
+}
+
+.imgfondoman {
+    transform: rotate(20deg);
+    top: 13vh;
+    left: 12vw;
+    position: absolute;
+}
+
+.imgfondo {
+    position: absolute;
+    width: 125px;
+    /* height:125px; */
+}
+
+.imgfondofrutilla {
+    transform: rotate(5deg);
+    top: 0vh;
+    left: 76vw;
+
+}
+
+.imgfondodragon {
+    transform: rotate(10deg);
+    top: 55vh;
+    left: 30vw;
+}
+
+.imgfondopera {
+    transform: rotate(30deg);
+    top: 27vh;
+    left: 60vw;
+}
+
+.imgfondonaranja {
+    transform: rotate(1deg);
+    top: 0vh;
+    left: 0vw;
+}
+
+.imgfondopiña {
+    transform: rotate(75deg);
+    top: 68vh;
+    right: 4vw;
+}
+
+.imgfondohojita {
+    transform: rotate(20deg);
+    top: 60vh;
+    left: 0vw;
+}
+
+.imgfondosandia {
+    transform: rotate(5deg);
+    top: 71vh;
+    left: 54vw;
+}
+
+.imgfondosandiapartida {
+    transform: rotate(90deg);
+    top: 7vh;
+    right: 3vw;
+}
+
+.imgfondoajo {
+    transform: rotate(50deg);
+    top: 0vh;
+    left: 18vw;
+}
+
+.imgfondocoquito {
+    transform: rotate(80deg);
+    top: 68vh;
+    left: 20vw;
+}
+
+.imgfondomango {
+    transform: rotate(2deg);
+    top: 71vh;
+    left: 72vw;
+}
+
+.imgfondonaranja2 {
+    transform: rotate(180deg);
+    top: 30vh;
+    right: 0vw;
+}
+
+.imgfondohojita2 {
+    transform: rotate(80deg);
+    top: 51vh;
+    left: 62vw;
+}
+
+.container-logoMensaje {
+    width: 100%;
+    height: 9vh;
+    display: flex;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+
+}
+
+.logoEmpresa {
+    display: flex;
+    width: 200px;
+    height: 120px;
+    align-items: center;
+    flex-direction: row;
+
+}
+
+.containerLogo {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.mensajeHome {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 20px;
+}
+
+.fraseHome {
+    display: flex;
+    width: 100%;
+    /* background-color: blue; */
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    height: 9vh;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.container-boton {
+    display: flex;
+    width: 100%;
+    height: 9vh;
+    /* background-color: pink; */
+    align-items: center;
+    justify-content: center;
+}
+
+.botonPedir {
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    box-shadow: rgba(238, 108, 108, 0.836) 0 0 8px;
+    /* letter-spacing: 1.5px; */
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;
+    background-color: #952323;
+    color: white
+}
+
+.letraordenaBoton {
+
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+
+}
+
+.letraordenaBoton:hover {
+
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+
+}
+
+.botonPedir:hover {
+    letter-spacing: 3px;
+    /* background-color: hsl(61, 85%, 49%); */
+    background-color: white;
+    color: black;
+    /* box-shadow: rgb(185, 204, 11) 0px 7px 29px 0px; */
+    box-shadow: red 0px 7px 29px 0px;
+}
+
+.botonPedir:active {
+    letter-spacing: 3px;
+    background-color: hsl(260, 17%, 93%);
+    color: hsl(0, 2%, 8%);
+    box-shadow: rgb(227, 224, 231) 0px 0px 0px 0px;
+    transform: translateY(10px);
+    transition: 100ms;
+}
+
+.botonPedir:hover .letraordenaBoton {
+    text-decoration: none;
+    color: black;
+}
+
+.img-frappescontainer {
+    display: flex;
+    height: 51.2vh;
+    width: 100%;
+    /* background-color:#A8DF8E; */
+    align-items: center;
+    justify-content: space-around;
+}
+
+.iconohomefrappes {
+    display: flex;
+    height: 43vh;
+    width: 11vw;
+    color: #A8DF8E;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconohomeCentrofrappes {
+    display: flex;
+    height: 48vh;
+    width: 13vw;
+    color: #A8DF8E;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MenuFrutas */
+
+.mensajeFrutas{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+
+.menu{
+    /* display: flex; */
+    width: 100%;
+    height: 92.2vh;
+    background-color:#ece8e8d8;
+
+}
+
+.containerMenuFrutas{
+
+    display: flex;
+    width: 100%;
+    height:auto;
+    background-color:#ece8e8d8;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.contenedor-productos {
+    background-color: transparent;
+    width: 190px;
+    height: 254px;
+    perspective: 1000px;
+margin:9px 45px;
+}
+
+.menuImgTarjeta{
+    background-color: transparent;
+    width: 90%;
+    /* height: 1px; */
+    perspective: 1000px;
+}
+
+.nombreProducto {
+
+    font-size: 1.5em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+.innerCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+}
+
+.contenedor-productos:hover .innerCard {
+    transform: rotateY(180deg);
+}
+
+
+.frontSide,
+.backSide {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 1rem;
+  color: white;
+  box-shadow: 0 0 0.3em rgba(255, 255, 255, 0.5);
+  font-weight: 700;
+}
+
+.frontSide,
+.frontSide::before {
+  background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+}
+
+.backSide,
+.backSide::before {
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+.backSide {
+  transform: rotateY(180deg);
+}
+
+.frontSide::before,
+.backSide::before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: '';
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  z-index: -1;
+  border-radius: 1em;
+  filter: blur(20px);
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0.3;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
+
+
+
+
+@media(max-width:450px) {
+    .nav-container {
+        display: none;
+    }
+
+    .icono-navContainer {
+        display: flex;
+        /* justify-content: flex-end; */
+        align-items: center;
+        width: 44%;
+    }
+
+    .container-header {
+        background-color: #A8DF8E;
+        width: 100%;
+        height: 75px;
+        display: flex;
+        position: fixed;
+        top: 0;
+        justify-content: center;
+    }
+
+    .nombreEmpresa {
+        width: 43%;
+        height: 75px;
+        font-size: 47px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    .containerLogo {
+        width: 15px;
+        height: 77px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logoEmpresa {
+        width: 200px;
+        height: 116px;
+        padding-top: 14px;
+    }
+
+    .imgfondo {
+        position: absolute;
+        width: 80px;
+    }
+
+    .container-logoMensaje {
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .mensajeHome {
+        width: 99%;
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+        font-family: 'Bodoni Moda', serif;
+        font-size: 16px;
+        z-index: 1;
+        text-align: center;
+        padding-top: 18px;
+    }
+
+    .fraseHome {
+        display: flex;
+        width: 100%;
+        /* background-color: blue; */
+        text-align: center;
+        font-family: Poppins;
+        font-size: 14px;
+        height: 4vh;
+        justify-content: center;
+        align-items: flex-start;
+        z-index: 1;
+        position: inherit;
+    }
+
+    .botonPedir {
+        padding: 11px 23px;
+        border-radius: 50px;
+        border: 0;
+        box-shadow: rgba(238, 108, 108, 0.836) 0 0 8px;
+        /* letter-spacing: 1.5px; */
+        text-transform: uppercase;
+        font-size: 9px;
+        transition: all .5s ease;
+        background-color: #952323;
+        color: white;
+    }
+
+    .letraordenaBoton {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+    }
+
+    .img-frappescontainer {
+        display: flex;
+        height: 41.2vh;
+        width: 100%;
+        /* background-color: #A8DF8E; */
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .iconohomefrappes {
+        display: flex;
+        height: 34vh;
+        width: 24vw;
+        color: #A8DF8E;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+    }
+
+    .iconohomeCentrofrappes {
+        height: 41vh;
+        width: 31vw;
+        color: #A8DF8E;
+        z-index: 1;
+    }
+
+}
