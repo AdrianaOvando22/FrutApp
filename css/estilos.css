@@ -112,10 +112,11 @@ body {
     position: relative;
 }
 
+/* IMAGENES DE HOME */
 .imgfondoplatano {
     transform: rotate(20deg);
-    top: 18vh;
-    left: 30vw;
+    top: 15vh;
+    left: 61vw;
     position: absolute;
 }
 
@@ -133,10 +134,16 @@ body {
 }
 
 .imgfondofrutilla {
-    transform: rotate(5deg);
-    top: 0vh;
-    left: 76vw;
+    transform: rotate(54deg);
+    top: 4vh;
+    right: 13vw;
+}
 
+
+.imgfondosandiapartida {
+    transform: rotate(54deg);
+    top: 1vh;
+    right: 56vw;
 }
 
 .imgfondodragon {
@@ -146,15 +153,82 @@ body {
 }
 
 .imgfondopera {
-    transform: rotate(30deg);
-    top: 27vh;
-    left: 60vw;
+    transform: rotate(-11deg);
+    top: 19vh;
+    left: 27vw;
 }
 
 .imgfondonaranja {
     transform: rotate(1deg);
     top: 0vh;
     left: 0vw;
+}
+
+.imgfondonaranja2 {
+    transform: rotate(180deg);
+    top: 13vh;
+    right: 0vw;
+}
+
+.imgfondocoquito {
+    transform: rotate(80deg);
+    top: 57vh;
+    left: 18vw;
+
+}
+
+.imgfondohojita {
+    transform: rotate(-2deg);
+    top: 68vh;
+    left: -1vw;
+
+}
+
+.imgfondosandia {
+    transform: rotate(5deg);
+    top: 61vh;
+    left: 52vw;
+}
+
+.imgfondohojita2 {
+    transform: rotate(-93deg);
+    top: 70vh;
+    left: 87vw;
+}
+
+.imgfondomango {
+    transform: rotate(3deg);
+    top: 59vh;
+    left: 72vw;
+}
+
+
+
+/* IMAGENES PROMOCIONES */
+
+.imgfondonaranja3 {
+    transform: rotate(1deg);
+    top: 32vh;
+    left: 24vw;
+}
+
+.imgfondosandiapartida3 {
+    transform: rotate(1deg);
+    top: 89vh;
+    left: 2vw;
+}
+
+.imgfondopiña3 {
+    transform: rotate(43deg);
+    top: 62vh;
+    left: 78vw;
+}
+
+.imgfondoajo3 {
+    transform: rotate(1deg);
+    top: 103vh;
+    left: 75vw;
+
 }
 
 .imgfondopiña {
@@ -242,7 +316,7 @@ body {
     display: flex;
     align-items: center;
     font-family: 'Bodoni Moda', serif;
-    font-size: 20px;
+    font-size: 32px;
 }
 
 .fraseHome {
@@ -254,7 +328,7 @@ body {
     font-size: 20px;
     height: 9vh;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
 
 }
 
@@ -355,7 +429,7 @@ body {
     height: 10vh;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 
@@ -363,7 +437,20 @@ body {
     /* display: flex; */
     width: 100%;
     height: 92.2vh;
-    background-color: #ece8e8d8;
+    /* background: #e1eec3; */
+    /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to bottom, #e1eec3, #f05053); */
+    /* Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to bottom, #e1eec3, #f05053); */
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+    background: #D21200;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #A8DF8E, #D21200);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #A8DF8E, #D21200);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -372,7 +459,6 @@ body {
     display: flex;
     width: 100%;
     height: auto;
-    background-color: #ece8e8d8;
     justify-content: space-around;
     align-content: center;
     flex-wrap: wrap;
@@ -397,7 +483,14 @@ body {
 
 .nombreProducto {
 
-    font-size: 1.5em;
+    font-size: 2em;
+    font-weight: 900;
+    text-align: center;
+    margin: 0;
+}
+
+.precioProducto {
+    font-size: 2.2em;
     font-weight: 900;
     text-align: center;
     margin: 0;
@@ -436,11 +529,13 @@ body {
     font-weight: 700;
 }
 
-.frontSide, .frontSide::before {
-    background: linear-gradient(43deg, rgb(6 6 6) 0%, rgb(4 4 4) 46%, #a1e581 100%);
+.frontSide,
+.frontSide::before {
+    background: linear-gradient(43deg, rgb(6 6 6) 0%, rgb(4 4 4) 46%, #2f302b 100%);
 }
 
-.backSide, .backSide::before {
+.backSide,
+.backSide::before {
     background-image: linear-gradient(160deg, #a1e581 0%, #80D0C7 100%);
 }
 
@@ -476,6 +571,131 @@ body {
         opacity: 0.3;
     }
 }
+
+.promociones {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 1000px;
+    background: #D21200;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #A8DF8E, #D21200);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #A8DF8E, #D21200);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.containerPrincipalPromo {
+    background-color: #392E2D;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.mensajePromociones {
+    width: 100%;
+    text-align: center;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 240%;
+    color: white;
+
+}
+
+.conteinerPromo {
+    height: 80%;
+    width: 100%;
+    display: flex;
+}
+
+.promoMensaje {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloPromo {
+    width: 100%;
+    text-align: center;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 120px;
+    color: white;
+}
+
+.infoPromo {
+    width: 100%;
+    text-align: center;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 20px;
+    color: white;
+}
+
+.containerImgPromo {
+    width: 50%;
+    height: 100%;
+    background-color: 392E2D;
+}
+
+.FrutaMixPromo {
+    width: 100%;
+
+}
+
+.contenido-img {
+    /* text-align: center; */
+    position: relative;
+    transition: all 2.25s;
+    background-color: #392E2D;
+    /* padding: 5em; */
+    transform-style: preserve-3d;
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* height: 5; */
+}
+
+.containerImgPromo:hover .contenido-img {
+    transform: rotateY(0.5turn);
+}
+
+.frente,
+.atras {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* padding: 2em; */
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.atras {
+    transform: rotateY(0.5turn);
+    background-color: ssred;
+}
+
+
+
 
 
 
@@ -521,10 +741,11 @@ body {
     }
 
     .logoEmpresa {
-        width: 200px;
-        height: 116px;
-        padding-top: 14px;
+        width: 352px;
+        height: 134px;
+        padding-top: 32px;
     }
+
 
     .imgfondo {
         position: absolute;
@@ -533,7 +754,7 @@ body {
 
     .container-logoMensaje {
         width: 100%;
-        height: 30vh;
+        height: 26vh;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -544,9 +765,9 @@ body {
         width: 99%;
         height: 100%;
         display: flex;
-        align-items: flex-start;
-        font-family: 'Bodoni Moda', serif;
-        font-size: 16px;
+        align-items: center;
+        font-family: "Bodoni Moda", serif;
+        font-size: 167%;
         z-index: 1;
         text-align: center;
         padding-top: 18px;
@@ -558,7 +779,7 @@ body {
         /* background-color: blue; */
         text-align: center;
         font-family: Poppins;
-        font-size: 14px;
+        font-size: 22px;
         height: 4vh;
         justify-content: center;
         align-items: flex-start;
@@ -609,6 +830,223 @@ body {
         width: 31vw;
         color: #A8DF8E;
         z-index: 1;
+    }
+
+    .menu {
+        height: auto;
+    }
+
+    .containerPrincipalPromo {
+        background-color: #392E2D;
+        width: 86%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .conteinerPromo {
+        height: 90%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .promoMensaje {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 40%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .containerImgPromo {
+        width: 100%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenido-img {
+        /* text-align: center; */
+        position: relative;
+        transition: all 2.25s;
+        background-color: #392E2D;
+        /* padding: 5em; */
+        transform-style: preserve-3d;
+        width: 100%;
+        height: 100%;
+    }
+
+    .mensajePromociones {
+        width: 100%;
+        text-align: center;
+        height: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 240%;
+        color: white;
+    }
+
+    .infoPromo {
+        width: 95%;
+        text-align: center;
+        height: 29%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 20px;
+        color: white;
+    }
+
+
+    .containerImgPromo:hover .contenido-img {
+        transform: rotateY(0.5turn);
+    }
+
+    .imgfondopiña3 {
+        transform: rotate(75deg);
+        top: 41vh;
+        right: 10px;
+    }
+
+    .imgfondonaranja3 {
+        transform: rotate(0deg);
+        top: 35vh;
+        left: 7vw;
+    }
+
+    .imgfondosandiapartida3 {
+        transform: rotate(52deg);
+        top: 58vh;
+        right: 69vw;
+    }
+
+
+    .imgfondoajo3 {
+        transform: rotate(1deg);
+        top: 60vh;
+        left: 70vw;
+    }
+
+    .frente,
+    .atras {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        /* padding: 2em; */
+        transform-style: preserve-3d;
+        backface-visibility: hidden;
+    }
+
+    .atras {
+        transform: rotateY(0.5turn);
+        background-color: ssred;
+    }
+
+
+    .imgfondo {
+        position: absolute;
+        width: 71px;
+        height: 78px;
+    }
+
+    .imgfondoman {
+        transform: rotate(20deg);
+        top: 19vh;
+        left: 6vw;
+        position: absolute;
+    }
+
+
+    .imgfondoplatano {
+        transform: rotate(20deg);
+        top: 19vh;
+        left: 71vw;
+        position: absolute;
+    }
+
+    .imgfondofrutilla {
+        transform: rotate(5deg);
+        top: 2vh;
+        left: 69vw;
+    }
+
+    imgfondodragon {
+        transform: rotate(10deg);
+        top: 32vh;
+        left: 0vw;
+    }
+
+    .imgfondopera {
+        transform: rotate(-11deg);
+        top: 4vh;
+        left: 13vw;
+    }
+
+    .imgfondonaranja {
+        transform: rotate(1deg);
+        top: -2vh;
+        left: 0vw;
+    }
+
+    .imgfondopiña {
+        transform: rotate(75deg);
+        top: 39vh;
+        right: 59vw;
+    }
+
+    .imgfondohojita {
+        transform: rotate(-91deg);
+        top: 64vh;
+        left: 1vw;
+    }
+
+    imgfondohojita2 {
+        transform: rotate(-88deg);
+        top: 51vh;
+        left: 65vw;
+    }
+
+    .imgfondosandia {
+        transform: rotate(5deg);
+        top: 66vh;
+        left: 59vw;
+    }
+
+    .imgfondosandiapartida {
+        transform: rotate(54deg);
+        top: -4vh;
+        right: 59vw;
+    }
+
+    .imgfondoajo {
+        transform: rotate(50deg);
+        top: 27vh;
+        left: 20vw;
+    }
+
+    .imgfondocoquito {
+        transform: rotate(80deg);
+        top: 64vh;
+        left: 14vw;
+    }
+
+    .imgfondomango {
+        transform: rotate(3deg);
+        top: 52vh;
+        left: 62vw;
+    }
+
+    .imgfondonaranja2 {
+        transform: rotate(180deg);
+        top: 32vh;
+        right: 5vw;
     }
 
 }

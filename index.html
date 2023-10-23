@@ -17,13 +17,13 @@
 <body>
 
     <header class="container-header">
-
+<!-- <a href="#home"><h1 class="nombreEmpresa">Frutopia</h1></a> -->
         <h1 class="nombreEmpresa">Frutopia</h1>
         <nav class="nav-container">
             <ul class="ul-container">
-                <li><a class="opcionNav" href="#">Home</a></li>
-                <li><a class="opcionNav" href="#">Menu</a></li>
-                <li><a class="opcionNav" href="#">Nosotros</a></li>
+                <li><a class="opcionNav" href="#home">Home</a></li>
+                <li><a class="opcionNav" href="#menu">Menu</a></li>
+                <li><a class="opcionNav" href="#promociones">Promociones</a></li>
                 <li><a class="opcionNav" href="#">Contacto</a></li>
                 <li><a class="opcionNav" href="#">Pedido</a></li>
             </ul>
@@ -35,7 +35,7 @@
     </header>
 
     <main class="main-containerPrincipal">
-        <section class="home-container">
+        <section class="home-container" id="home">
 
             <img class="imgfondo imgfondoman" src="img/manzanitasinfondo.png" alt="manzanita">
             <img class="imgfondo imgfondoplatano" src="img/platanitofondosinfondo.png" alt="platano">
@@ -56,12 +56,11 @@
                 <div class="containerLogo">
                     <img class="logoEmpresa" src="img/loguito.png" alt="LogoFrutopia">
                 </div>
-                <h2 class="mensajeHome"> Ofrecemos una experiencia extraordinaria y saludable al proporcionar
-                    <br> una variedad de frutas frescas en un ambiente amigable y conveniente.
+                <h2 class="mensajeHome"> Sumérgete en las delicias de la fruta fresca
                 </h2>
             </div>
 
-            <p class="fraseHome">Queremos ser parte de tu estilo de vida </p>
+            <p class="fraseHome"> 100% Organico </p>
             <div class="container-boton">
                 <button class="botonPedir"> <a class="letraordenaBoton" href="#">Ordena</a></button>
             </div>
@@ -71,8 +70,8 @@
                 <img class="iconohomefrappes" src="img/MangoFrappeSinFondo.png" alt="LogoFrutopia">
             </div>
         </section>
-        <section class="menu">
-            <h2 class="mensajeFrutas">FRUTAS</h2>
+        <section class="menu" id="menu" >
+            <h2 class="mensajeFrutas">❝ FRUTAS ❞</h2>
             <div class="containerMenuFrutas">
                 <div class=" contenedor-productos">
 
@@ -80,13 +79,18 @@
 
                         <div class="frontSide">
                             <img class="menuImgTarjeta" src="img/mangofondoMenu.png" alt="menuImgMango">
+                            <!-- <div class="backSide">
+
+                                <h3 class="nombreProducto">Mango</h3>
+                                <p class="precioProducto"> 3 Bs</p>
+                            </div> -->
                         </div>
 
 
                         <div class="backSide">
 
                             <h3 class="nombreProducto">Mango</h3>
-                            <p class="precioProducto"> bs 3</p>
+                        <p class="precioProducto"> 3 Bs</p>
                         </div>
 
                     </div>
@@ -100,7 +104,7 @@
                         <div class="backSide">
 
                             <h3 class="nombreProducto">Manzana</h3>
-                            <p class="precioProducto"> bs 3</p>
+                            <p class="precioProducto"> 3 Bs</p>
                         </div>
 
                     </div>
@@ -116,7 +120,7 @@
                         <div class="backSide">
 
                             <h3 class="nombreProducto">Sandia</h3>
-                            <p class="precioProducto"> bs 2</p>
+                            <p class="precioProducto"> 2 Bs</p>
                         </div>
 
                     </div>
@@ -131,7 +135,7 @@
                         <div class="backSide">
 
                             <h3 class="nombreProducto">Kiwi</h3>
-                            <p class="precioProducto"> bs 4</p>
+                            <p class="precioProducto">  4 Bs</p>
                         </div>
 
                     </div>
@@ -147,7 +151,7 @@
                         <div class="backSide">
 
                             <h3 class="nombreProducto">Piña</h3>
-                            <p class="precioProducto"> bs 2</p>
+                            <p class="precioProducto"> 2 Bs</p>
                         </div>
 
                     </div>
@@ -157,13 +161,53 @@
 
             </div>
         </section>
-        <section class="promociones">
 
-        </section>
-        <section class="nosotros">
+        <section class="promociones" id="promociones">
+            <img class="imgfondo imgfondonaranja3" src="img/naranjafondo.png" alt="naranja3">
+            <img class="imgfondo imgfondosandiapartida3" src="img/sandiaPartidaFondo.png" alt="sandiapartida3">
+            <img class="imgfondo imgfondopiña3" src="img/piñafondo.png" alt="piña3">
+            <img class="imgfondo imgfondoajo3" src="img/ajofondo.png" alt="ajo3">
 
+            <div class="containerPrincipalPromo">
+
+                <h2 class="mensajePromociones">PROMOCIONES</h2>
+
+                <div class="conteinerPromo">
+                    <div class="promoMensaje">
+                        <p class="tituloPromo"> 2x1</p>
+                        <p class="infoPromo"> ¡Por inuguracion la promocion mas loca del momento ! </p>
+                        
+                    </div>
+                    <div class="containerImgPromo">
+                        <div class="contenido-img">
+                            <div class="frente">
+
+                                <img class="FrutaMixPromo" src="img/frappeFrutaMixPromo.png" alt="FrutaMixPromo">
+                            </div>
+                            <div class="atras">
+
+                                <img class="FrutaMixPromo" src="img/frappeFrutillaPromo.png" alt="FrutillaPromo">
+                            </div>
+                        </div>
+                    <!-- <img class="imgMangoPromo" src="img/frapeMangoPromo.png" alt="imgMangoPromo">
+                    <img class="imgMoraPromo" src="img/smoothiesMoraPromo.png" alt="imgMoraPromo">
+                    <img class="imgMangoLechePromo" src="img/smothieMangoPromo.png" alt="imgMangoLechePromo"> -->
+                    </div>
+
+                </div>
+
+            </div>
         </section>
-        <section class="testimonios">
+
+<!-- 
+        <footer class="">
+            <section class="Contacto">
+       
+            </section>
+
+        </footer>  -->
+      
+        <section class="Pedido">
 
         </section>
     </main>
